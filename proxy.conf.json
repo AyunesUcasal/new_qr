@@ -1,0 +1,8 @@
+{
+   "/api/*":{
+        "target":"http://acreditaciones-desa.ucasal.edu.ar",
+        "secure":true,
+        "logLevel":"debug",
+        "changeOrigin":true        
+    }
+}

@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "new_qr",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
