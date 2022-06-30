@@ -19,7 +19,7 @@ export class Tab1Page {
   //link:string  = 'http://localhost:8100/api/evento';    
   //link:string = 'participante/asistio-evento/19-204';
   link_participante:string = 'http://acreditaciones-desa.ucasal.edu.ar/participante/asistio-evento/19-204';
-  link_eventos:string = 'api/evento';
+  link_eventos:string = 'http://acreditaciones-desa.ucasal.edu.ar/api/evento';
 
 
   constructor(
@@ -58,10 +58,18 @@ export class Tab1Page {
 
 
   acreditarParticipante(){    
-    
-    fetch(this.link_participante,{mode: 'no-cors'})
+
+    console.log(this.link_participante);  
+
+    fetch(this.link_participante)
      .then(response => response.text())
      .then(data => console.log(data));
+ 
+
+   /*   this.http.get(this.link_participante)
+      .subscribe( (resp:any) => {
+        console.log(resp);        
+    });   */
 
       /* this.http.get(this.link)
           .subscribe(resp =>{
